@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultor Médico - IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="chat-container">
+    <!-- Encabezado de la interfaz -->
+    <header class="chat-header">
+      <h1>Consultor Médico</h1>
+      <p>Asistente virtual para dudas sobre trámites e información médica</p>
+    </header>
+
+    <!-- Zona de chat -->
+    <section id="zona-de-chat" class="zona-de-chat" aria-live="polite">
+      <div class="mensaje bot">
+        <p>Hola, soy tu Consultor Médico. ¿En qué trámite o consulta médica te puedo ayudar hoy?</p>
+      </div>
+    </section>
+
+    <!-- Zona de escritura -->
+    <section id="zona-de-escritura" class="zona-de-escritura">
+      <form id="chat-form" class="chat-form">
+        <textarea 
+          id="user-input" 
+          placeholder="Escribe tu consulta aquí..." 
+          rows="2" 
+          required
+        ></textarea>
+        <button type="submit" id="send-btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
